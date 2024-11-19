@@ -1,0 +1,290 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+
+<!-- Mirrored from www.beauty.themebuilder.website/HTML/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2019 22:40:03 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Time Bachao | Home</title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="{% static 'images/whitelogocircle.png' %}">
+
+    <!-- font awesome css -->
+
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="{%static 'css/flaticon.css' %}">
+
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href=" {%static 'css/bootstrap.min.css' %}">
+
+    <!--jquery-ui css-->
+    <link rel="stylesheet" href="{%static 'css/jquery-ui.min.css' %}">
+
+    <!--menuzord css-->
+    <link rel="stylesheet" href=" {%static 'css/menuzord.css' %}">
+
+    <!--animate css-->
+    <link rel="stylesheet" href=" {%static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{%static 'css/animate.css' %}">
+
+    <!--owl.carousel css-->
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css' %}">
+
+    <!--nice-select css-->
+    <link rel="stylesheet" href="{%static 'css/nice-select.css' %}">
+
+    <!--venobox css-->
+    <link rel="stylesheet" href="{%static 'css/venobox.css' %}">
+
+    <!-- global style css -->
+    <link rel="stylesheet" href="{%static 'css/global-style.css' %}">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="{%static 'style.css' %}">
+
+    <!-- color css -->
+    <link rel="stylesheet" href="{%static 'css/colors/color-1.css' %}">
+
+    <!--responsive css-->
+    <link rel="stylesheet" href="{%static 'css/responsive.css' %}">
+    <style type="text/css">
+        
+        ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px #fffff;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #3b1b58;
+
+  border-radius: 10px;
+}
+    </style>
+
+</head>
+
+<body>
+
+
+ 
+
+    <!-- ======================================= 
+        ==Start Header section==  
+    =======================================-->
+<!-- search-modal -->
+
+
+
+
+    <!-- ======================================= 
+        ==Start Header section==  
+    =======================================-->
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="opening-time text-left"><i class="fa fa-clock-o color-d5"></i> <span>Opening Hour: Mon - Fri : 09:00 - 18:00</span> </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-mail text-right"> <a href="mailto:nfo@beautylab.com"><i class="fa fa-envelope color-d5"></i>info@TimeBachao.com</a> <span>/</span> <a href="tel:1800-111-333"><i class="fa fa-phone color-d5"></i>1800-111-333</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="beauty-header" id="beauty-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="menuzord" class="menuzord">
+                        <a href="index.php" class="menuzord-brand custom-logo"><img id="logo" src="{% static 'images/logo5.png'%}" alt="logo"></a>
+                        <ul class="menuzord-menu menuzord-right">
+                            <li class="active"><a href="index.php" title="Home">Home</a>
+                               
+                            </li>
+                             <li><a href="#" title="Service">Service</a>
+                                
+                                    <ul class="dropdown triangle">
+
+                                    {%for service in services%}
+
+                                    <li><a href="#">{{service.Sname}}</a></li>
+
+                                    {% endfor %}
+                          
+     
+       
+                                    
+                                    </li>
+                                   
+                                </ul>
+                                   </li>
+                               
+                                   
+                                   </li>
+                               
+                            </li>
+                            <li><a href="booking.php" title="Booking">Booking</a></li>
+                            <li><a href="#" title="About Us">About US</a>
+                                
+                            </li>
+                            
+                            
+                            <li><a href="contact.php" title="Contact">Contact</a></li>
+                        </ul>
+                    
+                    </div>
+                    <!--/#menuzord-->
+                </div>
+                <!--/col-md-12-->
+            </div>
+        </div>
+    </header>
+    <!-- ======================================= 
+        ==End Header section==  
+    =======================================-->
+
+    {% block Start %}
+
+    
+    {% endblock Start %}
+
+
+
+       <!-- ======================================= 
+        ==Start scroll top==  
+    =======================================-->
+    <section class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-widget contact-widget">
+                        <a href="index-2.html"><img alt="logo" src="{% static 'images/white_logo.png'%}"></a>
+                        <p>The Time Bachao  is a luxury beauty &amp; spa solution. The beauty spa strives to deliver top class.</p>
+                        <address>
+                            <p class="address"><i class="fa fa-home"></i><span>Address:</span> Defence DHA bloack H.</p>
+                            <p class="phone"><i class="fa fa-phone"></i><span>Phone:</span>1800-111-333</p>
+                            <p class="email"><i class="fa fa-envelope"></i><span>Email:</span> <a href=":mailto:info@timebachao.com">info@TimeBachao.com </a></p>
+                            <p class="web"><i class="fa fa-globe"></i><span>Web:</span> <a href="www.timebachao.com" target="_blank">www.timebachao.com</a></p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="single-widget recent-post-widget">
+                        <h5>Recent Posts</h5>
+                        <ul>
+                            <li>
+                                <p>There are a million different ways we can damage our hair, whether it's from a weekly swim or just being out in the sun unprotected. So what's hair's version of a chocolate-encrusted doughnut? A regular dose of one of these intensive hair treatments, which are guaranteed to give you healthy hair.
+</p>
+                                <span>November 25, 2020</span>
+                                <a href="#">read more</a>
+                            </li>
+                            <li>
+                                <p>The power of golden ratio typography cannot be understated. By choosing the..</p>
+                                <span>November 23, 2018</span>
+                                <a href="#">read more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+             
+                <!--/col-->
+            </div>
+        </div>
+    </section>
+    <!-- ======================================= 
+            ==End footer widget section== 
+    =======================================-->
+
+    
+    <!-- ======================================= 
+            ==Start footer section==  
+    =======================================-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <p class="copyright">&copy; 2018 All rights reserved. Developed by <a target="_blank" href="https://themeforest.net/user/theme_builder">Theme Builder</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top not-visible"><i class="fa fa-angle-up"></i></div>
+    <!-- =======================================
+        ==End scroll top==  
+    =======================================-->
+
+    <!-- jQuary library -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+    <!--bootstrap js-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!--jquery-ui js-->
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+
+    <!--menuzord js-->
+    <script src="{% static 'js/menuzord.js' %}"></script>
+
+    <!--slick js-->
+    <script src="{% static 'js/slick.js' %}"></script>
+
+    <!--owl.carousel js-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!--nice-select js-->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+
+    <!--venobox js-->
+    <script src="{% static 'js/venobox.min.js' %}"></script>
+
+    <!--counterup js-->
+    <script src="{% static 'js/jquery.counterup.min.j' %}s"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+
+    <!--vide js for background video-->
+    <script type="text/javascript" src="{% static 'js/jquery.vide.js' %}"></script>
+
+    <!--isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    
+    <!--google map js-->
+    <script type="text/javascript" src="{% static 'js/map.control.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE-L3bIAAbYiHgFs5tVRBg03HiLojuks&amp;callback=myMap"></script>
+
+    <!-- all jQuary activation code here and always it will be bottom of all script tag -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.beauty.themebuilder.website/HTML/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2019 22:40:03 GMT -->
+</html>
+
